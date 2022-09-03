@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Video Playlist</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+
+		<div class="text-center header">
+			<form id="myForm">
+				<input type="text" name="url" id="inputUrl" placeholder="Ingrese la url del video de YouTube"></input>
+				<button type="submit" class="btn btn-primary">Agregar</button>
+			</form>
+		</div>
+
+		<div class="wrapper-grey padded">
+			<div class="container">
+				<h2 class="text-center">Playlist</h2>
+					
+				<div class="container">
+					<div id="content">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div> 
+			<div id="myModal" class="modal fade"> 
+				<div class="modal-dialog"> 
+					<div class="modal-content"> 
+						<div class="modal-body"> 
+							<iframe id="cartoonVideo" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe> 
+						</div> 
+						
+						<div class="modal-footer"> 
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button> 
+							<h4 class="modal-title" id="modal-title">YouTube Video</h4>
+							<p id="modal-desc">YouTube Video</p>
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
